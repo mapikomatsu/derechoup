@@ -1,3 +1,70 @@
 {
-  "cursos": []
+  "cursos": [
+    {"codigo": "120000", "nombre": "Nivelación de Lenguaje", "ciclo": 0, "creditos": 2, "prerrequisitos": []},
+    {"codigo": "134654", "nombre": "Nivelación de Matemáticas", "ciclo": 0, "creditos": 4, "prerrequisitos": []},
+    {"codigo": "170131", "nombre": "Nivelación de Informática", "ciclo": 0, "creditos": 3, "prerrequisitos": []},
+    
+    {"codigo": "120001", "nombre": "Lenguaje I", "ciclo": 1, "creditos": 4, "prerrequisitos": ["120000"]},
+    {"codigo": "138649", "nombre": "Matemáticas I", "ciclo": 1, "creditos": 5, "prerrequisitos": ["134654"]},
+    {"codigo": "141038", "nombre": "Fundamentos de las Ciencias Empresariales", "ciclo": 1, "creditos": 4, "prerrequisitos": []},
+    {"codigo": "180277", "nombre": "Introducción al Derecho", "ciclo": 1, "creditos": 5, "prerrequisitos": []},
+
+    {"codigo": "120006", "nombre": "Lenguaje II", "ciclo": 2, "creditos": 4, "prerrequisitos": ["120001"]},
+    {"codigo": "132641", "nombre": "Economía General I", "ciclo": 2, "creditos": 5, "prerrequisitos": ["134654"]},
+    {"codigo": "160092", "nombre": "Fundamentos de Contabilidad", "ciclo": 2, "creditos": 4, "prerrequisitos": []},
+    {"codigo": "180086", "nombre": "Derecho Constitucional General", "ciclo": 2, "creditos": 5, "prerrequisitos": ["180277"]},
+    {"codigo": "180066", "nombre": "Personas del Derecho Civil", "ciclo": 2, "creditos": 4, "prerrequisitos": ["180277"]},
+
+    {"codigo": "130642", "nombre": "Economía General II", "ciclo": 3, "creditos": 5, "prerrequisitos": ["132641"]},
+    {"codigo": "185099", "nombre": "Acto Jurídico", "ciclo": 3, "creditos": 4, "prerrequisitos": ["180277", "180066"]},
+    {"codigo": "180017", "nombre": "Derechos Reales", "ciclo": 3, "creditos": 4, "prerrequisitos": ["180277"]},
+
+    {"codigo": "120133", "nombre": "Ética", "ciclo": 4, "creditos": 4, "prerrequisitos": []},
+    {"codigo": "180278", "nombre": "Obligaciones", "ciclo": 4, "creditos": 4, "prerrequisitos": ["185099"]},
+    {"codigo": "180282", "nombre": "Teoría General del Proceso", "ciclo": 4, "creditos": 4, "prerrequisitos": ["185099"]},
+    {"codigo": "180315", "nombre": "Derecho Procesal Constitucional", "ciclo": 4, "creditos": 4, "prerrequisitos": ["180086"]},
+
+    {"codigo": "160171", "nombre": "Contabilidad Financiera Intermedia", "ciclo": 5, "creditos": 5, "prerrequisitos": ["160092"]},
+    {"codigo": "180265", "nombre": "Contratos", "ciclo": 5, "creditos": 4, "prerrequisitos": ["180278"]},
+    {"codigo": "180321", "nombre": "Derecho Procesal Civil", "ciclo": 5, "creditos": 5, "prerrequisitos": ["180282"]},
+
+    {"codigo": "1F0124", "nombre": "Sistemas Financieros", "ciclo": 6, "creditos": 4, "prerrequisitos": ["130642", "160092"]},
+    {"codigo": "180327", "nombre": "Derecho Penal", "ciclo": 6, "creditos": 5, "prerrequisitos": ["180315"]},
+    {"codigo": "187019", "nombre": "Derecho Administrativo I", "ciclo": 6, "creditos": 4, "prerrequisitos": ["180086"]},
+    {"codigo": "180099", "nombre": "Responsabilidad Extracontractual", "ciclo": 6, "creditos": 3, "prerrequisitos": ["180278"]},
+    {"codigo": "180333", "nombre": "Contratos Especiales", "ciclo": 6, "creditos": 3, "prerrequisitos": ["180265"]},
+
+    {"codigo": "189097", "nombre": "Derecho Administrativo II", "ciclo": 7, "creditos": 4, "prerrequisitos": ["187019", "180315"]},
+    {"codigo": "180070", "nombre": "Derecho Internacional Público", "ciclo": 7, "creditos": 4, "prerrequisitos": ["180315"]},
+    {"codigo": "180088", "nombre": "Derecho Laboral I", "ciclo": 7, "creditos": 4, "prerrequisitos": ["180315"]},
+    {"codigo": "180276", "nombre": "Instituciones de Derecho Mercantil", "ciclo": 7, "creditos": 4, "prerrequisitos": ["180017", "180333"]},
+    {"codigo": "181008", "nombre": "Derecho Penal Económico", "ciclo": 7, "creditos": 2, "prerrequisitos": ["180327"]},
+
+    {"codigo": "180339", "nombre": "Derecho Tributario I", "ciclo": 8, "creditos": 4, "prerrequisitos": ["187019"]},
+    {"codigo": "180350", "nombre": "Sociedades", "ciclo": 8, "creditos": 4, "prerrequisitos": ["180276"]},
+    {"codigo": "180358", "nombre": "Derecho Procesal Penal", "ciclo": 8, "creditos": 4, "prerrequisitos": ["181008"]},
+    {"codigo": "182047", "nombre": "Análisis Económico del Derecho", "ciclo": 8, "creditos": 3, "prerrequisitos": ["180017", "180265", "180099"]},
+    {"codigo": "182128", "nombre": "Derecho Internacional Privado", "ciclo": 8, "creditos": 3, "prerrequisitos": ["180070"]},
+
+    {"codigo": "188027", "nombre": "Derecho de Familia y Sucesiones", "ciclo": 9, "creditos": 4, "prerrequisitos": ["180017", "180278"]},
+    {"codigo": "130466", "nombre": "Economía y Estadística Aplicada al Derecho", "ciclo": 9, "creditos": 4, "prerrequisitos": ["138649", "130642"]},
+    {"codigo": "186045", "nombre": "Arbitraje", "ciclo": 9, "creditos": 4, "prerrequisitos": ["180282", "180278"]},
+    {"codigo": "181000", "nombre": "Derecho Tributario II", "ciclo": 9, "creditos": 4, "prerrequisitos": ["180339"]},
+    {"codigo": "180089", "nombre": "Derecho Laboral II", "ciclo": 9, "creditos": 3, "prerrequisitos": ["180088"]},
+    {"codigo": "188111", "nombre": "Destrezas Legales I", "ciclo": 9, "creditos": 3, "prerrequisitos": []},
+
+    {"codigo": "180332", "nombre": "Libre Competencia", "ciclo": 10, "creditos": 4, "prerrequisitos": ["189097", "130466"]},
+    {"codigo": "180253", "nombre": "Políticas Públicas", "ciclo": 10, "creditos": 3, "prerrequisitos": ["189097"]},
+    {"codigo": "188112", "nombre": "Destrezas Legales II", "ciclo": 10, "creditos": 3, "prerrequisitos": ["188111", "180265"]},
+    {"codigo": "180093", "nombre": "Derecho Ambiental", "ciclo": 10, "creditos": 3, "prerrequisitos": ["187019", "180099"]},
+
+    {"codigo": "180274", "nombre": "Innovación Legal y Tecnología", "ciclo": 11, "creditos": 3, "prerrequisitos": []},
+    {"codigo": "150013", "nombre": "Proyección Social", "ciclo": 11, "creditos": 4, "prerrequisitos": []},
+    {"codigo": "185036", "nombre": "Banca y Mercado de Valores", "ciclo": 11, "creditos": 4, "prerrequisitos": ["180350", "1F0124"]},
+    {"codigo": "180279", "nombre": "Responsabilidad del Abogado", "ciclo": 11, "creditos": 3, "prerrequisitos": ["180086", "180265", "180350"]},
+
+    {"codigo": "180328", "nombre": "Instrumentos de Financiación y Garantías", "ciclo": 12, "creditos": 4, "prerrequisitos": ["180350", "1F0124"]},
+    {"codigo": "180094", "nombre": "Derecho del Comercio Internacional", "ciclo": 12, "creditos": 3, "prerrequisitos": ["180070"]},
+    {"codigo": "180280", "nombre": "Seminario de Tesis", "ciclo": 12, "creditos": 3, "prerrequisitos": []}
+  ]
 }
